@@ -1,0 +1,23 @@
+<!-- Thêm vào server.xml -->
+<Connector port="8443" protocol="org.apache.coyote.http11.Http11NioProtocol"
+        maxThreads="150" 
+        SSLEnabled="true"  
+        sslProtocol="TLS"
+        schema="https"
+        secure="true"
+        clientAuth="false" 
+        keystoreFile="C:/Users/suckm/OneDrive/Desktop/My SSL Cert/SSL Test 2/hentaiheaven.jks"
+        keystorePass="10262001"
+        >
+</Connector>
+
+<!-- Thêm vào Web.xml -->
+<security-constraint>
+    <web-resource-collection>
+        <web-resource-name>securedapp</web-resource-name>
+        <url-pattern>/*</url-pattern>
+    </web-resource-collection>
+    <user-data-constraint>
+        <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+    </user-data-constraint>
+</security-constraint>

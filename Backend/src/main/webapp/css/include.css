@@ -1,0 +1,279 @@
+@import url(theme.css);
+
+*, ::after, ::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Consolas,"courier new";
+}
+
+/* html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+} */
+
+@media all and (max-width: 1000px) {
+    #logo{
+        display: none;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #373737; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #888; 
+    width: 20px;
+}
+
+.header div{
+    display: flex;
+}
+.footer div{
+    display: flex;
+}
+ol, ul{
+    list-style-type: none;
+}
+
+body{
+    background-color: var(--background);
+}
+
+ .header{
+    width: 100%;
+    display: flex;
+    background: rgba(0, 0, 0, 0.2);
+    background: var(--background);
+    justify-content: space-around; 
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/*footer{
+     position: fixed; 
+    background: var(--background);
+    height: 150px;
+    bottom: 0; 
+}*/
+
+ .header h1{
+    display: flex;  
+    color: var(--purple);
+    font-size: 42px;
+    letter-spacing: 4px;
+    flex-shrink: 5;
+}  
+
+#dang-nhap-dang-ky{
+    width: 100px;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#dang-nhap-dang-ky a{
+    line-height: 50px;
+    font-size: 17px;
+    color: var(--pink);
+}
+
+div#user{
+    position: relative;
+    height: 100%;
+    line-height: 50px;
+    color: var(--pink);
+}
+
+#user:hover{
+    color: var(--green);
+}
+
+#user-option {
+    display: none;
+    position: absolute;
+    top: 50px;
+    /*height: 100px;*/
+    width: 150px;
+    background-color: rgba(230,159,157,0.1);
+    border-radius: 5px;
+    justify-content: center;
+}
+
+#user:hover > #user-option{
+    display: flex !important;
+}
+
+#dang-nhap-dang-ky a:hover{
+    color: var(--green);
+}
+
+#dang-nhap-dang-ky a:active{
+    color: wheat;
+}
+
+.link{
+    color: #EDEDED; 
+    font-style: oblique;
+    text-decoration: none;
+    margin: 5px;
+    transition: 0.1s;
+}
+
+.link-the-loai{
+    margin: 8px; 
+    color: black; 
+    font-style: oblique;
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--green);
+}
+
+a.link-the-loai:hover{
+    color: var(--green);
+}
+
+a.link-the-loai:active{
+    color: white;
+}
+
+#thanh-tim-kiem{
+    width: 20%;
+    border-radius: 2px;
+    border: 0;
+    padding-left: 5px;
+    margin: 10px 0;
+    flex-shrink: 7;
+    background: transparent;
+}
+
+#thanh-tim-kiem:hover{
+    opacity: 0.8;
+}
+
+#thanh-tim-kiem:focus{
+    opacity: 1;
+}
+
+
+#danh-muc-truyen{
+    color: white;
+    width: 80%;
+    /* border: 1px solid black; */
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#the-loai{
+    width: 250;
+    margin: 5px;
+    justify-content: flex-start;
+}
+
+.menu-the-loai {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 0;
+    top: 50px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.85);
+    overflow-y: scroll;
+    padding-top: 30px;
+    transition: 0.2s;
+    justify-content: flex-start;
+}
+
+.menu-the-loai a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    line-height: 100%;
+}
+
+.menu-the-loai a:hover {
+    font-weight: bold;
+}
+  
+#mo-menu {
+    font-size: 20px;
+    cursor: pointer;
+    /*background-color: var(--background);*/
+    background-color: transparent;
+    color: var(--pink);
+    padding: 10px 15px;
+    border: none;
+}
+
+
+#dong-menu{
+    background: transparent;
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    top: 10px;
+    right: 40px;
+    z-index: 0;
+    cursor: pointer;
+    border: none;
+}
+
+
+ .footer {
+    width: 100%;
+    margin: 0px auto;
+    color: white;
+    background: rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer > #container-footer {
+    width: 100%;
+    border-top: white solid 2px;
+}
+
+.footer .tv {
+    width: 25%;
+    font-size: 25px;
+    line-height: 75px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .tv .chuc-vu {
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--purple);
+}
+
+.footer .tv .ten-tv {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--pink);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 

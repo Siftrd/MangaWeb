@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/ca58ed98-0704-464c-9e74-b298705affba/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/hentaiheaven",
+    "appService.deploySubpath": "target\\Backend-1.0-SNAPSHOT.war"
+}

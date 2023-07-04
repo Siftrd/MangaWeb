@@ -1,0 +1,17 @@
+body {
+    background: #282a36;
+    color: white;
+}
+
+.tab-content {
+	flex: 1;
+}
+
+.form-group {
+	margin-bottom: 1.5rem;
+}
+
+.btn-primary{
+    background-color: #ff79c6;
+    margin: 2px;
+}

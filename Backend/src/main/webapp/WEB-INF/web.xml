@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>HomeController</servlet-name>
+        <servlet-class>controller.HomeController</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>index</servlet-name>
+        <jsp-file>/index.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>index</servlet-name>
+        <url-pattern>/index</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>thongtin</servlet-name>
+        <jsp-file>/view/thongTinNguoiDung.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>thongtin</servlet-name>
+        <url-pattern>/thongtin</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>yeuthich</servlet-name>
+        <jsp-file>/view/danhSachYeuThich.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>yeuthich</servlet-name>
+        <url-pattern>/yeuthich</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>upload</servlet-name>
+        <jsp-file>/view/uploadTruyen.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>upload</servlet-name>
+        <url-pattern>/uploadTruyen</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>HomeController</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>dangky</servlet-name>
+        <jsp-file>/view/dangKy.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>dangky</servlet-name>
+        <url-pattern>/dangky</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>dangnhap</servlet-name>
+        <jsp-file>/view/dangNhap.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>dangnhap</servlet-name>
+        <url-pattern>/dangnhap</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>kqtimkiem</servlet-name>
+        <jsp-file>/view/ketQuaTimKiem.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>kqtimkiem</servlet-name>
+        <url-pattern>/kqtimkiem</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>admin</servlet-name>
+        <jsp-file>/view/quanTriVien.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>admin</servlet-name>
+        <url-pattern>/admin</url-pattern>
+    </servlet-mapping>
+    
+    <session-config>
+        <session-timeout>
+            -1
+        </session-timeout>
+    </session-config>
+    
+    <welcome-file-list>
+        <welcome-file>home</welcome-file>
+    </welcome-file-list>
+    
+<!--    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>securedapp</web-resource-name>
+            <url-pattern>/*</url-pattern>
+        </web-resource-collection>
+        <user-data-constraint>
+            <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+        </user-data-constraint>
+    </security-constraint>-->
+</web-app>

@@ -1,0 +1,95 @@
+@import url(theme.css);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+flex{
+    display: flex;
+}
+
+button{
+    height: 40px;
+    width: 100px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+#anh-bia{
+    border: 1px solid black;
+    --height: 400px;
+    height: var(--height);
+    width: calc(var(--height)*(3/4));
+    margin: 10px;
+}
+
+#anh-bia img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#thong-tin{
+    color:white;
+    display: flex;
+    /*border: 1px solid black;*/
+    --height: 400px;
+    height: var(--height);
+    width: 900px;
+    margin: 10px;
+
+    flex-direction: column;
+    /*justify-content: space-around;*/
+}
+
+#thong-tin div{
+    /*border: 1px solid black;*/
+    margin: 10px;
+    font-size: 20px;
+}
+
+#khung-bao-dau{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#khung-doc{
+    display: block;
+    overflow: hidden;
+    width: 70%;
+    height:2000px;
+    padding-top: 10px;
+}
+
+.display{
+    display: flex;
+}
+
+footer{
+    height: 300px;
+    width: 100%;
+    background-color: grey;
+}
+
+.content {
+  padding: 10px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/*.sticky + .content {
+  padding-top: 60px;
+}*/

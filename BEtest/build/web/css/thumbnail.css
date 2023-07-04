@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#thumbnail{
+    border: 1px solid black;
+    height: 500px;
+    width: 500px;
+}
+
+video:-webkit-full-page-media {
+    height: 500px;
+    width: 500px;
+}
+
+video{
+    object-fit: fill;
+}

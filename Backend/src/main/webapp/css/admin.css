@@ -1,0 +1,156 @@
+*,:before,:after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+div{
+    display: flex;
+}
+
+input, option{
+    height: 30px;
+    width: 80%;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+select{
+    height: 30px;
+    width: 80%;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #ff79c6;
+}
+
+#them-truyen{
+    /*height: 200px;*/
+    max-width: 500px;
+    width: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 2;
+}
+
+#sua-truyen{
+    /*height: 200px;*/
+    max-width: 500px;
+    width: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+
+}
+
+#xoa-truyen{
+    /*height: 200px;*/
+    max-width: 500px;
+    width: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+
+}
+
+button#them{
+    height: 30px;
+}
+
+#container{
+    height: 100%;
+    widows: 100%;
+    flex-wrap: wrap;
+    /*    flex-direction: column;*/
+    align-items: flex-start;
+    justify-content: center;
+
+    padding-top: 50px;
+}
+
+#container div:nth-of-type(1){
+    flex-grow: 2;
+}
+#container div:nth-of-type(2){
+    flex-grow: 1;
+}
+#container div:nth-of-type(3){
+    flex-grow: 1;
+}
+
+h1{
+    color: white;
+}
+
+button{
+    width: 200px;
+
+}
+
+.thong-bao{
+    font-size: 20px;
+    color: pink;
+}
+
+.tai-file{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*border: 1px solid black;*/
+    margin: 10px;
+    height: fit-content;
+    width: 500px;
+}
+
+.tai-file h1{
+    margin: 0 10px 0 10px ;
+
+}
+
+#upload{
+    width: fit-content;
+
+}
+
+#file{
+    /*border: 1px solid black;*/
+    margin: 10px 0 10px 0;
+    width: fit-content;
+    color: white;
+}
+
+#file-thumb{
+    /*border: 1px solid black;*/
+    margin: 10px 0 10px 0;
+    width: fit-content;
+    color: white;
+}
+
+.xac-nhan{
+    height: 30px;
+    border-radius: 5px;
+    background: gainsboro;
+}
+
+.xac-nhan:hover{
+    background: var(--green);
+    transition-duration: 0.3s;
+}
+
+.loader {
+  display: none;
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid var(--pink); /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
